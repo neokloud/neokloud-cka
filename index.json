@@ -1,17 +1,18 @@
 {
-    "title": "Neokloud's CKA Lab",
-    "description": "Kubernetes Lab Series",
-    "scenarios": [
-      {
-        "title": "CKA Practice - ArgoCD Setup",
-        "path": "scenarios/argocd-killercoda"
-      },
-      {
-        "title": "Add Sidecar to Tail Logs",
-        "path": "scenarios/neokloud-sidecar-log"
-      }
-    ]
-  }
-
-  
-
+  "title": "Neokloud's CKA Lab",
+  "description": "Kubernetes Lab Series — Practice real CKA-style problems like ArgoCD, Sidecar logging, and LoadBalancer exposure with Cloudflare Tunnel.",
+  "scenarios": [
+    {
+      "title": "CKA Practice - ArgoCD Setup",
+      "path": "scenarios/argocd-killercoda"
+    },
+    {
+      "title": "Add Sidecar to Tail Logs",
+      "path": "scenarios/neokloud-sidecar-log"
+    },
+    {
+      "title": "LoadBalancer Service (via Cloudflare)",
+      "path": "scenarios/neokloud-loadbalancer-cloudflare"
+    }
+  ]
+}
