@@ -1,5 +1,5 @@
 {
-    "title": "Neokloud's Argo CD Lab",
+    "title": "Neokloud's CKA Lab",
     "description": "Kubernetes Lab Series",
     "scenarios": [
       {
@@ -12,4 +12,5 @@
       }
     ]
   }
+
   
