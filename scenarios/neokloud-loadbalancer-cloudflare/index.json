@@ -1,23 +1,31 @@
 {
-  "title": "LoadBalancer Service (via Cloudflare)",
-  "description": "Expose an NGINX application publicly over HTTP using MetalLB and a Cloudflare Tunnel inside a Killercoda Kubernetes cluster.",
+  "title": "Neokloud LoadBalancer Cloudflare",
+  "description": "Deploy an NGINX application with a LoadBalancer Service using MetalLB and expose it publicly via a Cloudflare Tunnel on Killercoda.",
   "difficulty": "Intermediate",
+  "time": "15 minutes",
   "details": {
     "steps": [
       {
-        "title": "Step 1 — Setup & Verify Cluster",
+        "title": "Step 1 — Deploy App and Setup MetalLB + Cloudflare Tunnel",
         "text": "intro.md"
       }
     ],
     "intro": {
       "text": "intro.md"
+    },
+    "assets": {
+      "host01": [
+        { "file": "foreground.sh", "target": "/root/foreground.sh" }
+      ]
     }
   },
   "backend": {
-    "imageid": "kubernetes-cluster"
+    "imageid": "kubernetes"
   },
   "environment": {
     "hideintro": false,
-    "uilayout": "terminal"
+    "uilayout": "terminal",
+    "uimessage1": "Wait for the Kubernetes cluster to be ready before proceeding...",
+    "showdashboard": true
   }
 }
