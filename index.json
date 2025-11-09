@@ -3,7 +3,7 @@
     "description": "Kubernetes Lab Series",
     "scenarios": [
       {
-        "title": "ArgoCD Killercoda",
+        "title": "CKA Practice - ArgoCD Setup",
         "path": "scenarios/argocd-killercoda"
       },
       {
@@ -14,3 +14,4 @@
   }
 
   
+
