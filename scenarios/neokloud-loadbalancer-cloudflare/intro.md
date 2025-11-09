@@ -7,7 +7,7 @@ We’ll use **MetalLB** to assign internal IPs and **Cloudflare Tunnel** to expo
 
 ---
 
-## 🚀 Step 1 — Deploy NGINX App
+## Step 1 — Deploy NGINX App
 
 ```bash
 cat <<EOF | kubectl apply -f -
@@ -49,7 +49,7 @@ kubectl get pods -l app=neokloud
 
 ---
 
-## ⚙️ Step 2 — Install MetalLB
+## Step 2 — Install MetalLB
 
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.14.3/config/manifests/metallb-native.yaml
@@ -63,7 +63,7 @@ kubectl get pods -n metallb-system -w
 
 ---
 
-## 🌐 Step 3 — Configure MetalLB IP Range
+##  Step 3 — Configure MetalLB IP Range
 
 ```bash
 cat <<EOF | kubectl apply -f -
@@ -98,7 +98,7 @@ curl http://172.30.1.100
 
 ---
 
-## ☁️ Step 4 — Install Cloudflare Tunnel
+## Step 4 — Install Cloudflare Tunnel
 
 ```bash
 wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
@@ -108,7 +108,7 @@ cloudflared --version
 
 ---
 
-## 🔓 Step 5 — Expose App via Cloudflare Tunnel
+## Step 5 — Expose App via Cloudflare Tunnel
 
 ```bash
 cloudflared tunnel --url http://172.30.1.100
@@ -121,6 +121,5 @@ Your quick Tunnel has been created! Visit it at:
 https://<random-name>.trycloudflare.com
 ```
 
-That’s your **public HTTPS endpoint** for the NGINX app 🎉
+That’s your **public HTTPS endpoint** for the NGINX app 
 
-Optionally, map your DNS (e.g., `neokloud.in`) as a **CNAME → <random-name>.trycloudflare.com** for custom domain access.
