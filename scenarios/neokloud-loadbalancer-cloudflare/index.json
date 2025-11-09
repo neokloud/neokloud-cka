@@ -1,0 +1,23 @@
+{
+  "title": "LoadBalancer Service (via Cloudflare)",
+  "description": "Expose an NGINX application publicly over HTTP using MetalLB and a Cloudflare Tunnel inside a Killercoda Kubernetes cluster.",
+  "difficulty": "Intermediate",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 — Setup & Verify Cluster",
+        "text": "intro.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster"
+  },
+  "environment": {
+    "hideintro": false,
+    "uilayout": "terminal"
+  }
+}
