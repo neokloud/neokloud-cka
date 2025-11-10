@@ -1,6 +1,6 @@
 {
   "title": "Neokloud's CKA Lab",
-  "description": "Kubernetes Lab Series — Practice real CKA-style problems like ArgoCD, Sidecar logging, and LoadBalancer exposure with Cloudflare Tunnel.",
+  "description": "Kubernetes Lab Series — Practice real CKA-style problems like ArgoCD, Sidecar logging, NodePort Services, and LoadBalancer exposure with Cloudflare Tunnel.",
   "scenarios": [
     {
       "title": "CKA Practice - ArgoCD Setup",
@@ -13,6 +13,10 @@
     {
       "title": "LoadBalancer Service (via Cloudflare)",
       "path": "scenarios/neokloud-loadbalancer-cloudflare"
+    },
+    {
+      "title": "NodePort Service Practice",
+      "path": "scenarios/nodeport-scenario"
     }
   ]
 }
