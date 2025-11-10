@@ -1,28 +1,43 @@
 {
   "title": "NodePort Service Practice",
-  "description": "Learn how to expose a backend application using NodePort and access it from within and outside the Kubernetes cluster.",
+  "description": "Deploy backend and frontend pods, expose backend via NodePort, and test internal and external connectivity in a Kubernetes cluster.",
   "difficulty": "beginner",
+  "time": "15 minutes",
   "details": {
+    "intro": {
+      "text": "intro.md"
+    },
     "steps": [
       {
-        "title": "Step 1 — Deploy Backend",
-        "text": "Apply backend-deploy.yaml to create two nginx pods."
-      },
-      {
-        "title": "Step 2 — Expose via NodePort",
-        "text": "Apply backend-svc.yaml to expose backend on port 30080."
-      },
-      {
-        "title": "Step 3 — Create Frontend Curl Pod",
-        "text": "Apply frontend-deploy.yaml to create a curl client pod."
-      },
-      {
-        "title": "Step 4 — Verify Access",
-        "text": "Use curl inside frontend pod and from control plane node."
+        "text": "intro.md"
       }
-    ]
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "scenarios/nodeport-scenario/backend-deploy.yaml",
+          "target": "/root/backend-deploy.yaml"
+        },
+        {
+          "file": "scenarios/nodeport-scenario/backend-svc.yaml",
+          "target": "/root/backend-svc.yaml"
+        },
+        {
+          "file": "scenarios/nodeport-scenario/frontend-deploy.yaml",
+          "target": "/root/frontend-deploy.yaml"
+        }
+      ]
+    }
   },
   "environment": {
+    "showdashboard": true,
+    "uidefault": "terminal"
+  },
+  "backend": {
     "imageid": "kubernetes-cluster-1-32"
-  }
+  },
+  "foreground": "foreground.sh"
 }
