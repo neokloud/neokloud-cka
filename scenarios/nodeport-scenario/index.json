@@ -1,0 +1,25 @@
+{
+  "title": "NodePort Service Practice",
+  "description": "Deploy backend and frontend pods, expose the backend via a NodePort Service, and test internal and external access within the Killercoda cluster.",
+  "difficulty": "beginner",
+  "details": {
+    "steps": [
+      {
+        "title": "Create Backend Deployment",
+        "text": "Apply backend-deploy.yaml to deploy nginx pods."
+      },
+      {
+        "title": "Expose Backend via NodePort",
+        "text": "Apply backend-svc.yaml and verify the exposed node port."
+      },
+      {
+        "title": "Create Frontend Curl Pod",
+        "text": "Deploy a curl pod using frontend-deploy.yaml to test backend connectivity."
+      },
+      {
+        "title": "Access via NodePort",
+        "text": "Use node IP and port 30080 to test from control plane."
+      }
+    ]
+  }
+}
