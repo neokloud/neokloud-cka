@@ -1,6 +1,6 @@
 {
   "title": "NodePort Service Practice",
-  "description": "Deploy backend and frontend pods, expose backend via NodePort, and test internal and external connectivity in a Kubernetes cluster.",
+  "description": "Deploy backend and frontend pods, expose backend via NodePort, and test connectivity inside and outside the Kubernetes cluster.",
   "difficulty": "beginner",
   "time": "15 minutes",
   "details": {
@@ -37,7 +37,7 @@
     "uidefault": "terminal"
   },
   "backend": {
-    "imageid": "kubernetes-cluster-1-32"
+    "imageid": "kubernetes"
   },
   "foreground": "foreground.sh"
 }
