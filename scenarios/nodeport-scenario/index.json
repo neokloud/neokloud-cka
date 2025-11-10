@@ -18,15 +18,15 @@
     "assets": {
       "host01": [
         {
-          "file": "scenarios/nodeport-scenario/backend-deploy.yaml",
+          "file": "nodeport-scenario/backend-deploy.yaml",
           "target": "/root/backend-deploy.yaml"
         },
         {
-          "file": "scenarios/nodeport-scenario/backend-svc.yaml",
+          "file": "nodeport-scenario/backend-svc.yaml",
           "target": "/root/backend-svc.yaml"
         },
         {
-          "file": "scenarios/nodeport-scenario/frontend-deploy.yaml",
+          "file": "nodeport-scenario/frontend-deploy.yaml",
           "target": "/root/frontend-deploy.yaml"
         }
       ]
