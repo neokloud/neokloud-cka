@@ -4,33 +4,9 @@
   "difficulty": "beginner",
   "time": "15 minutes",
   "details": {
-    "intro": {
-      "text": "intro.md"
-    },
-    "steps": [
-      {
-        "text": "intro.md"
-      }
-    ],
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "nodeport-scenario/backend-deploy.yaml",
-          "target": "/root/backend-deploy.yaml"
-        },
-        {
-          "file": "nodeport-scenario/backend-svc.yaml",
-          "target": "/root/backend-svc.yaml"
-        },
-        {
-          "file": "nodeport-scenario/frontend-deploy.yaml",
-          "target": "/root/frontend-deploy.yaml"
-        }
-      ]
-    }
+    "intro": { "text": "intro.md" },
+    "steps": [{ "text": "intro.md" }],
+    "finish": { "text": "finish.md" }
   },
   "environment": {
     "showdashboard": true,
