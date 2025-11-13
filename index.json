@@ -17,6 +17,10 @@
     {
       "title": "NodePort Service Practice",
       "path": "scenarios/nodeport-scenario"
+    },
+    {
+      "title": "PersistentVolume & PVC Practice",
+      "path": "scenarios/pv-scenario"
     }
   ]
 }
