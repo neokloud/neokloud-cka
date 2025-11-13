@@ -108,13 +108,6 @@ spec:
           image: nginx
           ports:
             - containerPort: 80
-          volumeMounts:
-            - name: web-storage
-              mountPath: /usr/share/nginx/html
-      volumes:
-        - name: web-storage
-          persistentVolumeClaim:
-            claimName: web-pvc
 ```
 
 Apply:
