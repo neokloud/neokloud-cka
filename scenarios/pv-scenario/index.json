@@ -1,0 +1,16 @@
+{
+  "title": "PersistentVolume & PVC Practice",
+  "description": "Create a PV, PVC and attach it to an existing Deployment.",
+  "details": {
+    "steps": [
+      { "title": "Persistent Storage Lab", "text": "intro.md" }
+    ],
+    "finish": "finish.md"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-k3s"
+  }
+}
