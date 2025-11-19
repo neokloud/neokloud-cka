@@ -1,13 +1,15 @@
 {
-  "title": "neo-ckad",
-  "description": "CKAD CronJob fix scenario.",
-  "imageid": "ubuntu2204",
+  "title": "Neo CKAD",
+  "description": "Fix a CronJob missing its schedule field.",
   "details": {
     "steps": [
-      {
-        "title": "Fix CronJob",
-        "text": "step1.md"
-      }
+      { "title": "Fix CronJob", "text": "step1.md" }
     ]
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes"
   }
 }
