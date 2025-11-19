@@ -21,6 +21,10 @@
     {
       "title": "PersistentVolume & PVC Practice",
       "path": "scenarios/pv-scenario"
+    },
+    {
+      "title": "CKAD Practice - CronJob Fix (neo-ckad)",
+      "path": "scenarios/neo-ckad"
     }
   ]
 }
