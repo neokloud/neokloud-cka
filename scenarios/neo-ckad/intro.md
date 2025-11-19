@@ -1,4 +1,4 @@
-# neo-ckad
+
 # CKAD CronJob Fix Scenario
 
 A CronJob manifest already exists at:
