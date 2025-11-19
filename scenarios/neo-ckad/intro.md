@@ -15,4 +15,4 @@ Fix the manifest so that the CronJob named **log-crusher** in the
 Do not change any other fields in the file.
 
 Re-apply the manifest and verify that the CronJob is scheduled correctly.
-This scenario introduces a CKAD-style CronJob fix exercise.
+This scenario introduces a CronJob fix exercise.
