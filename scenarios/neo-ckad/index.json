@@ -1,9 +1,13 @@
 {
   "title": "Neo CKAD",
-  "description": "Fix a CronJob missing its schedule field.",
+  "description": "CKAD CronJob fix scenario.",
   "details": {
+    "intro": "intro.md",
     "steps": [
-      { "title": "Fix CronJob", "text": "step1.md" }
+      {
+        "title": "Fix CronJob",
+        "text": "step1.md"
+      }
     ]
   },
   "environment": {
