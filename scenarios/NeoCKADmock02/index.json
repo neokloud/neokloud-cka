@@ -1,0 +1,29 @@
+{
+  "title": "NeoCKADmock02 - CPU & Logs Scenario",
+  "description": "Practice CKAD-style tasks: deploy a log-producing pod, collect logs, install Metrics Server, create CPU stress pods, and identify the highest CPU consumer.",
+  "icon": "assets/logo neokloud.png",
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction",
+        "text": "intro.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [],
+    "uilayout": "terminal",
+    "uimessage": "",
+    "hideintro": false
+  },
+  "backend": {
+    "imageid": "kubernetes-k3s-1node"
+  }
+}
