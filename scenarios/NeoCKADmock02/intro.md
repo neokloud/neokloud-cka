@@ -1,10 +1,4 @@
-# NeoCKADmock02
-
-Paste this content into:
-
-D:\neokloud-cka\scenarios\NeoCKADmock02\intro.md
-
-# NeoCKADmock02 — CPU & Logs Scenario
+# NeoCKADmock02 CPU & Logs Scenario
 
 This scenario contains two CKAD-style tasks:  
 1. Deploy a log-producing pod and save logs  
