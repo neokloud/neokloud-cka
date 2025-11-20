@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: stress-pod-2
+  namespace: cpu-stress
+spec:
+  containers:
+  - name: load
+    image: busybox
+    command: ["sh","-c","while true; do echo 'CPU Test 2'; done"]
