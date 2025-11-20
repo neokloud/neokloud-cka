@@ -25,6 +25,10 @@
     {
       "title": "CKAD Practice - CronJob Fix (neo-ckad)",
       "path": "scenarios/neo-ckad"
+    },
+    {
+      "title": "NeoCKADmock02 - CPU & Logs Scenario",
+      "path": "scenarios/NeoCKADmock02"
     }
   ]
 }
