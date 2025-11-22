@@ -1,0 +1,21 @@
+{
+  "title": "PriorityClass Deep Dive",
+  "description": "Learn how Kubernetes PriorityClass works with hands\u2011on steps.",
+  "icon": "fa-solid fa-layer-group",
+  "details": {
+    "intro": "intro.md",
+    "steps": [
+      "step1.md",
+      "step2.md",
+      "step3.md"
+    ],
+    "finish": "finish.md"
+  },
+  "environment": {
+    "showdashboard": true,
+    "layout": "terminal"
+  },
+  "backend": {
+    "image": "kubernetes-k3s-1node"
+  }
+}

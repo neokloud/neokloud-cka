@@ -1,0 +1,26 @@
+{
+  "title": "PriorityClass Lab",
+  "steps": [
+    {
+      "title": "Step 1",
+      "description": "Understanding PriorityClass",
+      "task": {
+        "init": "bash step1.sh"
+      }
+    },
+    {
+      "title": "Step 2",
+      "description": "Create a Pod with Priority",
+      "task": {
+        "init": "bash step2.sh"
+      }
+    },
+    {
+      "title": "Step 3",
+      "description": "Preemption Demo",
+      "task": {
+        "init": "bash step3.sh"
+      }
+    }
+  ]
+}
