@@ -16,6 +16,6 @@
     "layout": "terminal"
   },
   "backend": {
-    "image": "kubernetes-k3s-1node"
+    "image": "kubernetes"
   }
 }
