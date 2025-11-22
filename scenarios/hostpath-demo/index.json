@@ -1,34 +1,32 @@
 {
   "title": "Neo HostPath Lab – Two Node Cluster",
-  "description": "Hands-on walkthrough showing how HostPath storage keeps data even when Pods are recreated on a multi-node K3s cluster.",
+  "description": "Hands-on HostPath storage keeps data even when Pods are recreated in a multi-node K3s cluster.",
   "icon": "assets/logo-neokloud.png",
   "details": {
     "intro": {
       "text": "intro.md"
     },
-"steps": [
-  {
-    "title": "Step 1: Create the Pod",
-    "text": "step1.md"
-  },
-  {
-    "title": "Step 2: Verify Pod Status",
-    "text": "step2.md"
-  },
-  {
-    "title": "Step 3: Curl the Output",
-    "text": "step3.md"
-  },
-  {
-    "title": "Step 4: Delete and Recreate Pod",
-    "text": "step4.md"
-  },
-  {
-    "title": "Step 5: Validate Persistence",
-    "text": "step5.md"
-  }
-]
-
+    "steps": [
+      {
+        "title": "Step 1: Create the Pod",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2: Verify Pod Status",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3: Curl the Output",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4: Delete and Recreate Pod",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5: Validate Persistence",
+        "text": "step5.md"
+      }
     ],
     "finish": {
       "text": "finish.md"
