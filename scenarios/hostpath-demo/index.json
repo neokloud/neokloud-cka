@@ -6,27 +6,29 @@
     "intro": {
       "text": "intro.md"
     },
-    "steps": [
-      {
-        "title": "Task 1: Launch Pod with HostPath",
-        "text": "task1.md"
-      },
-      {
-        "title": "Task 2: Check Pod Running State",
-        "text": "task2.md"
-      },
-      {
-        "title": "Task 3: Access the Application Output",
-        "text": "task3.md"
-      },
-      {
-        "title": "Task 4: Remove and Re-deploy Pod",
-        "text": "task4.md"
-      },
-      {
-        "title": "Task 5: Confirm HostPath Data Survival",
-        "text": "task5.md"
-      }
+"steps": [
+  {
+    "title": "Step 1: Create the Pod",
+    "text": "step1.md"
+  },
+  {
+    "title": "Step 2: Verify Pod Status",
+    "text": "step2.md"
+  },
+  {
+    "title": "Step 3: Curl the Output",
+    "text": "step3.md"
+  },
+  {
+    "title": "Step 4: Delete and Recreate Pod",
+    "text": "step4.md"
+  },
+  {
+    "title": "Step 5: Validate Persistence",
+    "text": "step5.md"
+  }
+]
+
     ],
     "finish": {
       "text": "finish.md"
