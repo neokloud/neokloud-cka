@@ -1,6 +1,7 @@
 {
   "title": "HostPath Persistence Demo",
   "description": "Learn how Kubernetes HostPath volumes retain data across Pod restarts.",
+  "icon": "assets/logo neokloud.png",
   "details": {
     "intro": {
       "text": "intro.md"
@@ -30,5 +31,15 @@
     "finish": {
       "text": "finish.md"
     }
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [],
+    "uilayout": "terminal",
+    "uimessage": "",
+    "hideintro": false
+  },
+  "backend": {
+    "imageid": "kubernetes-k3s-1node"
   }
 }
