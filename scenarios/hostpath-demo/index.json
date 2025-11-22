@@ -1,0 +1,34 @@
+{
+  "title": "HostPath Persistence Demo",
+  "description": "Learn how Kubernetes HostPath volumes retain data across Pod restarts.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Step 1: Create the Pod",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2: Verify Pod Status",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3: Curl the Output",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4: Delete and Recreate Pod",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5: Validate Persistence",
+        "text": "step5.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  }
+}
