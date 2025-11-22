@@ -29,6 +29,10 @@
     {
       "title": "NeoCKADmock02 - CPU & Logs Scenario",
       "path": "scenarios/NeoCKADmock02"
+    },
+    {
+      "title": "HostPath Persistence Demo",
+      "path": "scenarios/hostpath-demo"
     }
   ]
 }
