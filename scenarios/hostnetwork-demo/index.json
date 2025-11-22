@@ -1,0 +1,44 @@
+{
+  "title": "HostNetwork Demo",
+  "description": "Demonstration of Kubernetes hostNetwork feature using BusyBox HTTP server.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Step 1: Create Pod with hostNetwork",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2: Verify Pod Status",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3: Curl Output",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4: Delete and Recreate Pod",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5: Validate Behavior",
+        "text": "step5.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [],
+    "uilayout": "terminal",
+    "uimessage": "",
+    "hideintro": false
+  },
+  "backend": {
+    "imageid": "kubernetes-k3s-1node"
+  }
+}

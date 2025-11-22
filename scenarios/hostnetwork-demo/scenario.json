@@ -1,0 +1,27 @@
+{
+  "environment": {
+    "showide": false
+  },
+  "steps": [
+    {
+      "title": "Create the Pod",
+      "task": "kubectl apply -f pod.yaml"
+    },
+    {
+      "title": "Verify Pod",
+      "task": "kubectl get pods -o wide"
+    },
+    {
+      "title": "Curl Output",
+      "task": "curl http://$(kubectl get pod neo-hostnetwork-web -o jsonpath='{.status.hostIP}')"
+    },
+    {
+      "title": "Delete Pod",
+      "task": "kubectl delete pod neo-hostnetwork-web"
+    },
+    {
+      "title": "Recreate Pod",
+      "task": "kubectl apply -f pod.yaml"
+    }
+  ]
+}

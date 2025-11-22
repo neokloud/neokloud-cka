@@ -1,0 +1,28 @@
+# Step 1: Create Pod with hostNetwork
+
+Apply this YAML:
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: neo-hostnetwork-web
+spec:
+  hostNetwork: true
+  containers:
+    - name: neo-web
+      image: busybox
+      command:
+        - sh
+        - -c
+        - |
+          mkdir -p /www;
+          echo "Hello from neokloud via hostNetwork $(date)" > /www/index.html;
+          httpd -f -p 80 -h /www;
+      ports:
+        - containerPort: 80
+```
+
+Create it:
+```
+kubectl apply -f pod.yaml
+```
