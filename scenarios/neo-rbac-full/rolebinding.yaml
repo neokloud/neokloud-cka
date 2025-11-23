@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: neo-rb
+  namespace: neo
+subjects:
+- kind: ServiceAccount
+  name: default
+  namespace: neo
+roleRef:
+  kind: Role
+  name: neo-role
+  apiGroup: rbac.authorization.k8s.io
