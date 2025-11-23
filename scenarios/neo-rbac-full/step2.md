@@ -4,19 +4,23 @@ You are preparing the environment for a CKAD-style RBAC troubleshooting scenario
 
 Run these commands:
 
-kubectl create namespace neo
+'''
 
+kubectl create namespace neo
+'''
+'''
 mkdir -p /home/files/
+'''
 
 Step 1 — Prepare the Deployment File
 
 Create the file:
-
+'''
 vi /home/files/neo-depl.yaml
-
+'''
 
 Paste the full Deployment manifest exactly as below:
-
+'''
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -44,7 +48,7 @@ spec:
               sleep 5;
             done
 
-
+'''
 This Deployment guarantees that the Pod logs will show RBAC errors:
 
 User "system:serviceaccount:neo:default" cannot list resource "deployments" in API group "apps" in the namespace "neo"
@@ -52,9 +56,9 @@ User "system:serviceaccount:neo:default" cannot list resource "deployments" in A
 Step 1 — Apply the Broken Deployment
 
 Apply it to create the failing Pod:
-
+'''
 kubectl apply -f /home/files/neo-depl.yaml
-
+'''
 
 This creates:
 
@@ -65,11 +69,15 @@ This creates:
 Step 1 — Verify Logs
 
 Check what the Pod is printing:
-
+'''
 kubectl logs -n neo -l app=neo-app
-
+'''
 
 You should see:
 
 Checking deployments...
-Error from server (Forbidden): deployments.apps is forbidden: User "system:serviceaccount:neo:default" cannot list resource "deployments" in API group "apps" in the namespace "neo"
+Error from server (Forbidden): deployments.apps is forbidden: 
+
+User "system:serviceaccount:neo:default" 
+
+cannot list resource "deployments" in API group "apps" in the namespace "neo"
