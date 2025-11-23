@@ -1,5 +1,3 @@
-# Fix Application Pod That Fails Because of Missing RBAC
-
 You are a Kubernetes administrator.
 
 A developer applied the Deployment **neo-depl** in the **neo** namespace.
