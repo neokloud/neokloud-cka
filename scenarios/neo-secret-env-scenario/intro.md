@@ -1,10 +1,21 @@
 # Neo: Secret to Environment Variable (neo-lab)
 
-In this lab you'll create a Kubernetes Secret and consume its data as environment variables inside a Pod.
-The lab is split into three steps. Each step includes copyable commands and embedded YAML where appropriate.
+Task Description
+You are working in the neo-lab namespace.
+Your application needs to read sensitive values from a Kubernetes Secret.
 
-Namespace used: `neo-lab`
-Secret name: `neo-db-secret`
-Pod name: `neo-env-pod`
+Create a Secret named neo-db-secret in the neo-lab namespace.
+The Secret must contain:
+dbuser = neokloud
+dbtoken = N3o@Secure!55
 
-Follow the steps in order. Do **not** skip steps.
+Create a Pod named neo-env-pod using the busybox image.
+The container should keep running using:
+sleep 4000
+
+Expose the Secret values as environment variables:
+APP_USER → value of dbuser
+APP_TOKEN → value of dbtoken
+
+After the pod starts, open a shell inside the container and verify that both variables are set correctly.
+
