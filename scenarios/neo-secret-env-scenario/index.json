@@ -1,24 +1,19 @@
 {
-  "title": "Neo: Secret \u2192 Env Var (neo-lab)",
+  "title": "Neo: Secret → Env Var (neo-lab)",
   "description": "Create a Secret and expose its values as environment variables in a Pod (neo-lab).",
   "icon": "assets/logo.png",
   "details": {
-    "intro": "intro.md",
+    "intro": {
+      "text": "intro.md"
+    },
     "steps": [
-      {
-        "title": "Create namespace",
-        "text": "step1.md"
-      },
-      {
-        "title": "Create Secret",
-        "text": "step2.md"
-      },
-      {
-        "title": "Create Pod and verify",
-        "text": "step3.md"
-      }
+      { "title": "Create namespace", "text": "step1.md" },
+      { "title": "Create Secret", "text": "step2.md" },
+      { "title": "Create Pod and verify", "text": "step3.md" }
     ],
-    "finish": "finish.md"
+    "finish": {
+      "text": "finish.md"
+    }
   },
   "environment": {
     "showdashboard": true,
