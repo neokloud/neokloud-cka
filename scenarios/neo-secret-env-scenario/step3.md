@@ -1,5 +1,29 @@
 # Step 3 — Create the Pod and verify environment variables
 
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: neo-env-pod
+  namespace: neo-lab
+spec:
+  containers:
+  - name: busybox
+    image: busybox
+    command: ["sh", "-c", "sleep 4000"]
+    env:
+    - name: APP_USER
+      valueFrom:
+        secretKeyRef:
+          name: neo-db-secret
+          key: dbuser
+    - name: APP_TOKEN
+      valueFrom:
+        secretKeyRef:
+          name: neo-db-secret
+          key: dbtoken
+```
+
 **Command (copyable) — apply pod manifest**
 
 ```bash
