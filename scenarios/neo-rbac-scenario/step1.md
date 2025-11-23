@@ -1,0 +1,3 @@
+# Step 1: Check Logs And Identify Error
+
+First, verify pods...

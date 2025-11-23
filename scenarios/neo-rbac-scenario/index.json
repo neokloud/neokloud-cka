@@ -1,0 +1,16 @@
+{
+  "title": "NeoCKADmock-RBAC-Deployment-Troubleshooting",
+  "description": "Fix a broken Deployment in the neo namespace where the Pod fails with RBAC errors.",
+  "icon": "assets/neokloud.png",
+  "details": {
+    "steps": [
+      {"title": "Introduction","text": "intro.md"},
+      {"title": "Check Logs And Identify Error","text": "step1.md"},
+      {"title": "Create Required RBAC Permissions","text": "step2.md"},
+      {"title": "Restart Deployment And Verify","text": "step3.md"},
+      {"title": "Final Answer","text": "finish.md"}
+    ]
+  },
+  "environment": {"showterminal": true, "terminalheight": 60},
+  "backend": {"imageid": "kubernetes-kubeadm-1-32"}
+}

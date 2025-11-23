@@ -1,0 +1,3 @@
+# NeoCKADmock – RBAC Error in Deployment
+
+You are working in the neo namespace...
