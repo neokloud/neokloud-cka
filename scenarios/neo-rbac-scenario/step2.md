@@ -1,3 +1,0 @@
-# Step 2: Create Required RBAC Permissions
-
-Create a Role...

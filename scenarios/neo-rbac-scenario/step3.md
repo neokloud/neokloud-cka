@@ -1,3 +1,0 @@
-# Step 3: Restart Deployment And Verify
-
-Restart deployment...
