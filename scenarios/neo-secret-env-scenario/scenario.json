@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "steps": [
+    {
+      "title": "Create namespace",
+      "task": "kubectl create namespace neo-lab || true"
+    },
+    {
+      "title": "Create Secret",
+      "task": "kubectl create secret generic neo-db-secret -n neo-lab --from-literal=dbuser=neokloud --from-literal=dbtoken='N3o@Secure!55' || true"
+    },
+    {
+      "title": "Create Pod",
+      "task": "kubectl apply -f pod.yaml -n neo-lab || true"
+    }
+  ]
+}
