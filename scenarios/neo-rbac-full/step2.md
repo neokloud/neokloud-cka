@@ -1,43 +1,75 @@
-# Steps.md – Fix Pod Logging RBAC Errors (CKAD Style)
+Step 1 — Create Namespace and Directory
 
-1. **Check the current logs of the application pod**  
-   ```bash
-   kubectl logs -n neo -l app=neo-app --tail=50
-→ You will see repeated Forbidden errors about deployments.apps
+You are preparing the environment for a CKAD-style RBAC troubleshooting scenario.
 
-Confirm you see the Forbidden error about deployments.apps
-Just type: yes (or observe the error)
-Create a Role in neo namespace that allows listing deploymentsBashcat <<EOF | kubectl apply -f -
-apiVersion: rbac.authorization.k8s.io/v1
-kind: Role
+Run these commands:
+
+kubectl create namespace neo
+
+mkdir -p /home/files/
+
+Step 1 — Prepare the Deployment File
+
+Create the file:
+
+vi /home/files/neo-depl.yaml
+
+
+Paste the full Deployment manifest exactly as below:
+
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: deployment-lister
+  name: neo-depl
   namespace: neo
-rules:
-- apiGroups: ["apps"]
-  resources: ["deployments"]
-  verbs: ["get", "list"]
-EOF
-Create a RoleBinding to bind the default ServiceAccount to this RoleBashcat <<EOF | kubectl apply -f -
-apiVersion: rbac.authorization.k8s.io/v1
-kind: RoleBinding
-metadata:
-  name: default-deployment-lister
-  namespace: neo
-subjects:
-- kind: ServiceAccount
-  name: default
-  namespace: neo
-roleRef:
-  kind: Role
-  name: deployment-lister
-  apiGroup: rbac.authorization.k8s.io
-EOF
-Restart the Deployment so the pod picks up the new permissions cleanly
-(CKAD examiners love this command)Bashkubectl rollout restart deployment neo-depl -n neo
-Wait for the new pod to be ReadyBashkubectl get pods -n neo -l app=neo-app -w(Press Ctrl+C once you see 1/1 Running)
-Check the logs again — they must now show successful output
-Best CKAD way: show only fresh logs and stream new onesBashkubectl logs -n neo -l app=neo-app --tail=20 -f
-Final verification — no more Forbidden errorsBashkubectl logs -n neo -l app=neo-app --tail=30→ You should only see:textChecking deployments...
-NAME       READY   UP-TO-DATE   AVAILABLE   AGE
-neo-depl   1/1     1            1           ...
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: neo-app
+  template:
+    metadata:
+      labels:
+        app: neo-app
+    spec:
+      serviceAccountName: default
+      containers:
+      - name: api-checker
+        image: bitnami/kubectl:latest
+        command: ["sh", "-c"]
+        args:
+          - while true; do
+              echo "Checking deployments...";
+              kubectl get deployments -n neo;
+              sleep 5;
+            done
+
+
+This Deployment guarantees that the Pod logs will show RBAC errors:
+
+User "system:serviceaccount:neo:default" cannot list resource "deployments" in API group "apps" in the namespace "neo"
+
+Step 1 — Apply the Broken Deployment
+
+Apply it to create the failing Pod:
+
+kubectl apply -f /home/files/neo-depl.yaml
+
+
+This creates:
+
+• Deployment neo-depl in namespace neo
+• A Pod running a loop calling kubectl get deployments
+• The Pod immediately begins logging RBAC failures
+
+Step 1 — Verify Logs
+
+Check what the Pod is printing:
+
+kubectl logs -n neo -l app=neo-app
+
+
+You should see:
+
+Checking deployments...
+Error from server (Forbidden): deployments.apps is forbidden: User "system:serviceaccount:neo:default" cannot list resource "deployments" in API group "apps" in the namespace "neo"
