@@ -1,0 +1,12 @@
+{
+  "title": "Neo NodePort Scenario",
+  "description": "Deployment update + NodePort service creation",
+  "details": {
+    "steps": [
+      { "title": "Introduction", "text": "intro.md" },
+      { "title": "Steps", "text": "steps.md" },
+      { "title": "Finish", "text": "finish.md" }
+    ]
+  },
+  "icon": "assets/logo.png"
+}
