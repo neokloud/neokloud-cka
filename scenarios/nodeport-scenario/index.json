@@ -1,6 +1,6 @@
 {
   "title": "Neo NodePort Scenario",
-  "description": "Update Deployment and create NodePort service.",
+  "description": "Update Deployment and create NodePort service in neokloud namespace.",
   "icon": "",
   "details": {
     "steps": [
@@ -9,12 +9,10 @@
       { "title": "Finish", "text": "finish.md" }
     ]
   },
-
   "environment": {
     "showterminal": true,
     "terminalheight": 60
   },
-
   "backend": {
     "imageid": "kubernetes-kubeadm-2nodes"
   }
