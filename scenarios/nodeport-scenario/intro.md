@@ -1,3 +1,30 @@
+# CKAD-06
+You are working in the neokloud namespace.
+
+A deployment named `neo-depl` already exists.
+
+Your task is to update and expose it as follows:
+
+Modify `neo-depl` so that:
+
+The pod template includes the label `app=neo`
+
+The deployment runs `4` replicas
+
+Create a NodePort service named `neo-app` in the `neokloud` namespace that:
+
+Listens on TCP port `8080`
+
+Selects the pods from the updated `neo-depl` deployment
+
+Uses a valid NodePort value assigned automatically by Kubernetes
+
+Complete the required changes and apply all manifests in the cluster.
+
+
+
+
+
 # Neo NodePort Service Scenario
 
 You are working in the `neokloud` namespace.
