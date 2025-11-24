@@ -13,7 +13,7 @@
     "uidefault": "terminal"
   },
   "backend": {
-    "imageid": "kubernetes"
+    "imageid": "kubernetes-kubeadm-2nodes"
   },
   "foreground": "foreground.sh"
 }
