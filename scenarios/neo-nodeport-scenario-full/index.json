@@ -1,0 +1,28 @@
+{
+  "title": "Neo NodePort Scenario",
+  "description": "Update an existing Deployment and expose it via a NodePort Service in the neokloud namespace.",
+  "icon": "",
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction & Lab Story",
+        "text": "intro.md"
+      },
+      {
+        "title": "Step-by-step Checklist",
+        "text": "steps.md"
+      },
+      {
+        "title": "Finish",
+        "text": "finish.md"
+      }
+    ]
+  },
+  "environment": {
+    "showterminal": true,
+    "terminalheight": 60
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
