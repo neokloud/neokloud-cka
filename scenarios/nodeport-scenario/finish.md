@@ -1,11 +1,15 @@
-# 🎉 Congratulations!
 
-You’ve successfully completed the **NodePort Service Practice** lab!
+# Scenario Complete
 
-In this scenario, you:
-1. Deployed a backend NGINX deployment.
-2. Exposed it using a NodePort Service.
-3. Deployed a frontend curl client to test connectivity.
-4. Verified access internally and via NodePort.
+You have completed the **Neo NodePort Service Scenario**.
 
-Great job exploring how Kubernetes exposes applications through NodePort services.
+You practiced:
+
+- Inspecting and exporting an existing Deployment.
+- Respecting immutable fields like `.spec.selector`.
+- Safely adding labels to the pod template.
+- Scaling a Deployment to the required number of replicas.
+- Creating a NodePort Service to expose the application.
+- Testing the service using Node IP and NodePort with `curl`.
+
+These are core skills for CKA/CKAD-style Kubernetes questions.
