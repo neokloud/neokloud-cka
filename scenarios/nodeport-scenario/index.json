@@ -1,19 +1,21 @@
 {
-  "title": "NodePort Service Practice",
-  "description": "Deploy backend and frontend pods, expose backend via NodePort, and test connectivity inside and outside the Kubernetes cluster.",
-  "difficulty": "beginner",
-  "time": "15 minutes",
+  "title": "Neo NodePort Scenario",
+  "description": "Update Deployment and create NodePort service.",
+  "icon": "",
   "details": {
-    "intro": { "text": "intro.md" },
-    "steps": [{ "text": "intro.md" }],
-    "finish": { "text": "finish.md" }
+    "steps": [
+      { "title": "Introduction", "text": "intro.md" },
+      { "title": "Steps", "text": "steps.md" },
+      { "title": "Finish", "text": "finish.md" }
+    ]
   },
+
   "environment": {
-    "showdashboard": true,
-    "uidefault": "terminal"
+    "showterminal": true,
+    "terminalheight": 60
   },
+
   "backend": {
     "imageid": "kubernetes-kubeadm-2nodes"
-  },
-  "foreground": "foreground.sh"
+  }
 }
