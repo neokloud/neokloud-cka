@@ -1,0 +1,14 @@
+{
+  "title": "Neo NFS Volume Demo (No PV/PVC)",
+  "description": "Learn how to set up NFS server, install NFS client tools, and mount NFS directly inside a Kubernetes Pod using NFS volumes.",
+  "details": {
+    "steps": [
+      { "title": "Introduction", "text": "intro.md" },
+      { "title": "Set Up NFS Server", "text": "step1-nfs-server.md" },
+      { "title": "Install NFS Client Tools", "text": "step2-install-nfs-common.md" },
+      { "title": "Create Kubernetes Pod with NFS Volume", "text": "step3-create-pod.md" },
+      { "title": "Verify NFS Mount and Output", "text": "step4-verify.md" }
+    ]
+  },
+  "environment": { "uilayout": "terminal" }
+}
