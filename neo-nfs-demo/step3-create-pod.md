@@ -33,7 +33,7 @@ spec:
   volumes:
   - name: shared-data
     nfs:
-      server: 192.168.0.205
+      server: 172.30.1.2
       path: /srv/nfs/demo
 EOF
 
