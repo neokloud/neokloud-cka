@@ -13,12 +13,15 @@
       { "text": "06-first-access-403-and-fix.md" },
       { "text": "07-persistence-after-pod-delete.md" },
       { "text": "08-cleanup.md" }
-    ]
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
   },
   "backend": {
     "trainingid": "kubernetes-k3s"
   },
-  "imageid": "kubernetes-k3s-multinode",
+  "imageid": "kubernetes-k3s",
   "environment": {
     "showide": false,
     "uilayout": "terminal"
