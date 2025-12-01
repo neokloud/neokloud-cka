@@ -1,6 +1,6 @@
 {
   "title": "Neokloud's CKA Lab",
-  "description": "Kubernetes Lab Series — Practice real CKA-style problems like ArgoCD, Sidecar logging, NodePort Services, and LoadBalancer exposure with Cloudflare Tunnel.",
+  "description": "Kubernetes Lab Series — Practice real CKA-style problems like ArgoCD, Sidecar logging, NodePort Services, LoadBalancer exposure, and PersistentVolume scenarios.",
   "scenarios": [
     {
       "title": "CKA Practice - ArgoCD Setup",
@@ -33,6 +33,10 @@
     {
       "title": "HostPath Persistence Demo",
       "path": "scenarios/hostpath-demo"
+    },
+    {
+      "title": "NeoKloud HostPath PV Scenario",
+      "path": "scenarios/neokloud-pv-scenario"
     }
   ]
 }
