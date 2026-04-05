@@ -10,10 +10,43 @@
         "title": "Chapter 1: Lab Setup & Cluster Overview",
         "text": "step1/text.md"
       },
-    ],
-    "finish": {
-      "text": "finish.md"
-    }
+      {
+        "title": "Chapter 2: Cluster Hardening",
+        "text": "step2/text.md"
+      },
+      {
+        "title": "Chapter 3: RBAC & Authorization",
+        "text": "step3/text.md"
+      },
+      {
+        "title": "Chapter 4: Network Policies",
+        "text": "step4/text.md"
+      },
+      {
+        "title": "Chapter 5: Pod Security Standards",
+        "text": "step5/text.md"
+      },
+      {
+        "title": "Chapter 6: Secrets & ConfigMap Security",
+        "text": "step6/text.md"
+      },
+      {
+        "title": "Chapter 7: Supply Chain Security (Trivy, Cosign)",
+        "text": "step7/text.md"
+      },
+      {
+        "title": "Chapter 8: Runtime Security (Falco, AppArmor, SELinux)",
+        "text": "step8/text.md"
+      },
+      {
+        "title": "Chapter 9: System & Node Hardening",
+        "text": "step9/text.md"
+      },
+      {
+        "title": "Chapter 10: Final Practice & Exam Tips",
+        "text": "step10/text.md"
+      }
+    ]
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-2nodes"
