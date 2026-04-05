@@ -5,13 +5,15 @@
     "intro": {
       "text": "intro.md"
     },
-    "steps": 
+    "steps": [
       {
         "title": "Chapter 1: Lab Setup & Cluster Overview",
         "text": "step1/text.md"
-      },
-
-
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-2nodes"
